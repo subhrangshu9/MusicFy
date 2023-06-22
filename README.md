@@ -1,4 +1,4 @@
-Musify  :-
+Musicfy  :-
   A simple spotify clone build using  HTML,CSS,JS.
 
 SCREENSHOTS :- 
