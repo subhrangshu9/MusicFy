@@ -22,6 +22,16 @@ const songs = [
         poster: "img/3.jpg",
     },
     {
+        id:"4",
+        songName: `Kuch Khaas <br><div class="subtitle">Fashion</div>`,
+        poster: "img/4.jpg",
+    },
+    {
+        id:"5",
+        songName: `Hua Hain Aaj Pehli Baar <br><div class="subtitle">Sanam Re</div>`,
+        poster: "img/5.jpg",
+    },
+    {
         id:"6",
         songName: `Electronic Music <br><div class="subtitle">Electro</div>`,
         poster: "img/6.jpg",
