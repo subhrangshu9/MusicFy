@@ -81,11 +81,6 @@ const songs = [
         songName: `Lut Gaye <br><div class="subtitle">Jubin Nautiyal</div>`,
         poster: "img/15.jpg",
     },
-    {
-        id:"15",
-        songName: `Insane <br><div class="subtitle">AP Dhillon</div>`,
-        
-    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
