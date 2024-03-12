@@ -81,6 +81,11 @@ const songs = [
         songName: `Lut Gaye <br><div class="subtitle">Jubin Nautiyal</div>`,
         poster: "img/15.jpg",
     },
+    {
+        id:"15",
+        songName: `Insane <br><div class="subtitle">AP Dhillon</div>`,
+        
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
@@ -125,12 +130,12 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         index = e.target.id;
-        makeAllPlays();
-        e.target.classList.remove('bi-play-circle-fill');
-        e.target.classList.add('bi-pause-circle-fill');
         music.src = `audio/${index}.mp3`;
         poster_master_play.src =`img/${index}.jpg`;
         music.play();
+        e.target.classList.remove('bi-play-circle-fill');
+        e.target.classList.add('bi-pause-circle-fill');
+        download_music.href = `audio/${index}.mp3`;
         let song_title = songs.filter((ele)=>{
             return ele.id == index;
         })
@@ -138,6 +143,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
         song_title.forEach(ele =>{
             let {songName} = ele;
             title.innerHTML = songName;
+            download_music.setAttribute('download', songName);
         })
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
@@ -301,3 +307,6 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
+
+
+
