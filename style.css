@@ -208,21 +208,39 @@ header .master_play h5 {
     margin-left: 15px;
     color: #fff;
     line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 header .master_play h5 .subtitle{
    font-size: 11px;
    color: #4c5262;
+   width: 100%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 }
 header .master_play .icon{
    font-size: 20px;
    color: #fff;
    margin: 0px 20px 0px 40px;
    outline: none;
+   display: flex;
+   align-items: center;
 }
 header .master_play .icon .bi{
  cursor: pointer;
  outline: none;
 }
+
+
+header .master_play .icon #download_music {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
 header .master_play .icon .bi:nth-child(2){
 border: 1px solid rgb(105, 105, 170,.1);
 border-radius: 50%;
@@ -418,6 +436,9 @@ header .master_play .vol input{
     color: #fff;
     font-size: 12px;
  }
+
+
+
  header .song_side nav .user{
     position: relative;
     width: 30px;
